@@ -1,19 +1,29 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-int maxx(int num1,int num2){
-    if (num1>=num2){
-        return num1;
+void print1(int n){
+    for (int i=0; i<n;i++){
+        for (int j=0;j<n;j++){
+            cout << "*";
+        
+        }
+        cout << endl;
     }
-    return num2;
 }
-
+void print2(int n){
+    for (int i=0; i<n;i++){
+        for (int j=0;j<=i;j++){
+            cout << "* ";
+        
+        }
+        cout << endl;
+    }
+}
 int main(){
-    int num1,num2;
-    cin >> num1 >> num2;
-    int max=maxx(num1,num2);
-    cout << max;
-
-    return 0;
+    int t;
+    cin >> t;
+    for (int i=0;i<t;i++){
+        int n;
+        cin >> n;
+        print2(n);
+    }
 }
-    
